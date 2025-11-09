@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bolalarni Taekvondo Treningiga Jalb Qilish — Slaydlar</title>
+<style>
+:root{
+  --bg:#0b0b0b;
+  --text:#f5f5f5;
+  --accent:#d4af37;
+  --accent2:#ffd700;
+  --radius:12px;
+  --shadow:0 12px 30px rgba(0,0,0,0.7);
+  --font:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html, body{height:100%;}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.slide{
+  position:absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  padding:60px;
+  display:flex;
+  flex-direction:row; /* rasm va matn yonma-yon */
+  align-items:center;
+  justify-content:flex-start;
+  gap:80px; /* rasm va matn orasidagi masofa */
+  transition:opacity .5s, transform .5s;
+  opacity:0;
+  transform:translateX(50px);
+  background:linear-gradient(135deg, rgba(0,0,0,0.85), rgba(20,20,20,0.85));
+}
+.slide.active{
+  opacity:1;
+  transform:translateX(0);
+}
+h1{
+  font-size:2rem;
+  margin-bottom:16px;
+  color:var(--accent);
+  text-shadow: 0 0 10px var(--accent2);
+}
+p{
+  margin-bottom:12px;
+  line-height:1.8;
+  font-size:1.2rem; /* matn kattaroq */
+  max-width:600px;
+  color:var(--text);
+}
+.img-wrap{
+  flex-shrink:0;
+}
+img{
+  width:500px;
+  max-width:90%;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  display:block;
+  border: 2px solid var(--accent);
+}
+.nav{
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:0 40px;
+}
+button{
+  background:linear-gradient(90deg, var(--accent), var(--accent2));
+  border:none;
+  color:#000;
+  padding:14px 26px;
+  border-radius:var(--radius);
+  font-weight:700;
+  cursor:pointer;
+  font-size:1rem;
+  box-shadow:0 6px 18px rgba(212,175,55,0.5);
+  transition: all .3s ease;
+}
+button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 25px rgba(212,175,55,0.7);
+}
+@media(max-width:900px){
+  .slide{
+    flex-direction:column;
+    padding:36px;
+    gap:24px; /* mobil uchun kichikroq bo‘shliq */
+  }
+  h1{font-size:1.5rem;}
+  p{font-size:1rem;}
+  img{width:100%;}
+  .nav{padding:0 18px 12px;}
+}
+</style>
+</head>
+<body>
+
+<section class="slide active">
+  <div class="img-wrap">
+    <img src="https://forwarriorsonly.com/cdn/shop/products/True-Warrio-Taekwon-Do-Uniform-Black-Belt-Sabum_1024x1024.jpg?v=1482854014"
+         alt="Bolalar taekvondo mashqlarini bajarayotgan holat"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>1. Taekvondoga qiziqishni uyg‘otish</h1>
+    <p>Bola taekvondoga qiziqishi uchun mashg‘ulotlar o‘yin shaklida bo‘lishi kerak. Trenerning kayfiyati va yondashuvi bolaning ishtiyoqini oshiradi. Har bir muvaffaqiyatni sezib maqtash va rag‘batlantirish motivatsiya beradi. Mashg‘ulotni hikoya shaklida boshlash, “bugun biz kuchli jamoamiz” kabi iboralar bolani ruhlantiradi. Qiziqish — o‘sishning birinchi bosqichi.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://d2f0ora2gkri0g.cloudfront.net/bkpam2229830_f4b335b3-7768-45f2-992f-db9045699b4e.jpg"
+         alt="Kichik guruhda taekvondo mashqlari"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>2. O‘yin orqali texnikani o‘rgatish</h1>
+    <p>O‘yin orqali mashq qilish bolada qiziqishni oshiradi va xatolardan qo‘rqmaslikni o‘rgatadi. Masalan, kichik relle mashqlari, zarba usullari va mini-turnirlar bolalarda tez fikrlash va tezkor reaktsiyani rivojlantiradi. Har mashg‘ulotdan keyin qisqa mulohaza qilish tavsiya etiladi: “Bugun nimani yaxshiladik?”, “Qaysi texnika ustida ishlashimiz kerak?”.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg"
+         alt="Taekvondo zarba mashqi"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>3. Asosiy texnikani shakllantirish</h1>
+    <p>Taekvondo poydevori — texnik zarbalar va bloklar. Kichik yoshda mukammal natija emas, to‘g‘ri odat muhim. Bola xato qilsa, tanqid qilmasdan davom ettirishga rag‘batlantiring. Har kuni 5-10 daqiqa individual texnika yetarli. Mashqlarni kichik o‘yinlar bilan bog‘lash rivojlanishni tezlashtiradi.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/International_Taekwon-Do_Federation_logo.png"
+         alt="Turli mashqlar bilan taekvondo maydoni"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>4. Bir xillikdan qochish</h1>
+    <p>Har doim bir xil mashqlar zerikishga olib keladi. Mashqlarni tezlik, koordinatsiya, kuch, zarba texnikalari va mini-o‘yinlarga bo‘ling. Har mashg‘ulotga yangi element qo‘shing va maydonni o‘zgartiring. Rangli konuslar, musobaqalar va kichik vazifalar motivatsiyani oshiradi.</p>
+  </div>
+</section>
+
+<section class="slide">
+
+  
+  <div>
+    <h1>5. Rag‘batlantirish tizimi</h1>
+    <p>Rag‘bat — bolalarning eng kuchli motivatori. Maqtov aniq bo‘lsin: “Bugun zarbani mukammal bajarding”. Stickerlar, medallar, “haftaning eng yaxshi o‘quvchisi” kabi unvonlar samarali. Ota-onalar oldida e’lon qilish motivatsiyani oshiradi. Rag‘bat me’yorda bo‘lishi kerak.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://fanaticwrestling.com/cdn/shop/articles/unnamed_-_2023-07-24T124611.325_1024x1024.png?v=1690284352"
+         alt="Trener bolalarga taekvondo maqsadini tushuntiryapti"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>6. Maqsadni tushuntirish</h1>
+    <p>Bola mashqning maqsadini bilsa, o‘zini ongli tutadi. Mashg‘ulot boshida aniq vazifa qo‘ying va oxirida natijani qayta ko‘rib chiqing. Maqsadlar kichik va o‘lchab bo‘ladigan bo‘lsin. Demo harakatlar orqali tushuntirish samarali. Har mashg‘ulot — kichik yutuq yo‘li.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+
+  </div>
+  <div>
+    <h1>7. Jamoaviy ishlashni shakllantirish</h1>
+    <p>Taekvondoda ham jamoaviy ruh muhim. Birgalikda mashq qilish, bir‑birini qo‘llab‑quvvatlash bolaning ijtimoiy va sport ko‘nikmalarini rivojlantiradi. Kichik jamoaviy topshiriqlar motivatsiya beradi va hamkorlikni oshiradi.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://cdn.uza.uz/2025/02/15/15/44/2WpP94xOsaR7M1z4z777lvF5KXmpIK4s_front.jpg"
+         alt="Taekvondo mashqlarida hurmat va intizom"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>8. Intizom va hurmat</h1>
+    <p>Hurmat va intizom taekvondoda eng muhim qadriyatlar. Trenerga, jamoadoshga, raqibga hurmat bo‘lishi shart. Intizom jazolash orqali emas, tushuntirish va namuna orqali o‘rgatiladi. Kichik qoidalar yengil va tushunarli bo‘lsin.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="img-wrap">
+    <img src="https://itftkd.sport/wp-content/uploads/2020/06/Competition-ITF-2-394.jpg"
+         alt="Ota‑onalar va trener suhbatlashyapti taekvondo guruhida"
+         loading="lazy">
+  </div>
+  <div>
+    <h1>9. Ota‑onalar bilan hamkorlik</h1>
+    <p>Ota‑onalar bolaning rivojlanishida katta rol o‘ynaydi. Trening jarayonini tushuntirish, foto va video hisobotlar orqali ota‑onani xabardor qilish muhim. Oyiga bir marta ochiq mashg‘ulot bo‘lishi motivatsiyani oshiradi. Muhit doim ijobiy bo‘lishi kerak.</p>
+  </div>
+</section>
+
+<div class="nav">
+  <button onclick="prevSlide()">← Oldingi</button>
+  <button onclick="nextSlide()">Keyingi →</button>
+</div>
+
+<script>
+const slides = Array.from(document.querySelectorAll('.slide'));
+let current = 0;
+function showSlide(i){
+  slides.forEach((s, idx) => s.classList.toggle('active', idx===i));
+  current = i;
+}
+function nextSlide(){ showSlide((current + 1) % slides.length); }
+function prevSlide(){ showSlide((current - 1 + slides.length) % slides.length); }
+document.addEventListener('keydown', e => {
+  if(e.key === 'ArrowRight') nextSlide();
+  if(e.key === 'ArrowLeft') prevSlide();
+});
+</script>
+
+</body>
+</html>
